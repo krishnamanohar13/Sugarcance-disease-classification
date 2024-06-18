@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sugarcane Leaf Disease Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <ul class="nav-area">
+                <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="welcome-text">
+            <h1>Sugarcane Leaf Disease Detection</h1>
+            <form  action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+                <input class="fas fa-upload" type="file" name="image" id="files" accept="image/*" class="hidden"/ required>
+                <label for="files">Select file</label>
+                
+                <br>
+                
+                <label for="file-input">
+                    <i class="fas fa-upload"></i> &nbsp;
+                    <input type="submit" class="fas fa-upload" value="SUBMIT">
+                </label>
+
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>

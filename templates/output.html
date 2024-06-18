@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sugarcane Leaf Disease Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <ul class="nav-area">
+                <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="main_section">
+            <h1>The Sugarcane Leaf is <span>{{ output }}</span>! </h1>
+        </div> 
+    </header>
+</body>
+</html>
